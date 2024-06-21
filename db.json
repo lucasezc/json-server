@@ -1,0 +1,55 @@
+{
+  "notes": [
+    {
+      "id": "b3c0",
+      "content": "nota",
+      "important": false
+    },
+    {
+      "id": "4cdb",
+      "content": "wsd",
+      "important": false
+    },
+    {
+      "id": "0e5c",
+      "content": "w",
+      "important": true
+    },
+    {
+      "id": "8be1",
+      "content": "k",
+      "important": true
+    },
+    {
+      "id": "26dc",
+      "content": "k",
+      "important": false
+    },
+    {
+      "id": "032e",
+      "content": "jjj",
+      "important": true
+    },
+    {
+      "id": "f7ea",
+      "content": "asd",
+      "important": false
+    },
+    {
+      "id": "feee",
+      "content": "asd}",
+      "important": false
+    }
+  ],
+  "routes": {
+    "/notes": {
+      "DELETE": true
+    }
+  },
+  "users": [
+    {
+      "user": "admin",
+      "id": "2397"
+    }
+  ]
+}
