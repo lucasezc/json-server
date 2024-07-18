@@ -6,9 +6,6 @@ This project demonstrates the usage of `json-server` to create a fake REST API. 
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -16,4 +13,6 @@ To get started with this project, you need to clone the repository and install t
 
 ```bash
 git clone https://github.com/lucasezc/json-server.git
+
+```bash
 npm install
