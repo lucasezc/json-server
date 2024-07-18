@@ -1,24 +1,19 @@
 {
   "notes": [
     {
-      "id": "aa71",
-      "content": "asd",
-      "important": true
-    },
-    {
-      "id": "0f63",
-      "content": "asd",
+      "id": "7bf1",
+      "content": "as",
       "important": false
     },
     {
-      "id": "aa04",
-      "content": "asdasd",
+      "id": "da50",
+      "content": "asd",
       "important": true
     },
     {
-      "id": "ae18",
-      "content": "asdasdasd",
-      "important": true
+      "id": "6831",
+      "content": "asdf",
+      "important": false
     }
   ],
   "routes": {

@@ -9,10 +9,12 @@ const App = () => {
   const [showAll, setShowAll] = useState(true);
   const [error, setError] = useState("");
   const [important, setImportant] = useState([]);
-
+  
   console.log(showAll);
   console.log(notes);
+  console.log(important);
 
+  
   useEffect(() => {
 
     const fdata = () => {
@@ -90,8 +92,12 @@ const App = () => {
     setNotes([]);
   }
 
+
+
   const importNotes = () => {
-    setImportant(notes)
+
+
+    setImportant(notes);
     console.log(notes);
     const hasImportantNotes = important.some(note => note.important);
     console.log(hasImportantNotes)
