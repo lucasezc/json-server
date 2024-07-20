@@ -96,21 +96,23 @@ const App = () => {
 
   const importNotes = () => {
 
+    const allImportant = notes.filter(note => note.important); //Metodo de array, solo valores True
+    console.log(allImportant);
 
-    setImportant(notes);
-    console.log(notes);
-    const hasImportantNotes = important.some(note => note.important);
-    console.log(hasImportantNotes)
+    setImportant(allImportant);
+    console.log(important);
 
-    if (hasImportantNotes) {
-      setImportant(important.filter(note => note.important))
-      console.log(important);
-    } else {
+    if(important.length === 0){
       setError("No se encuentran notas importantes");
       setTimeout(() => {
         setError(null);
       }, 2000);
     }
+
+    if(showAll === false){
+      setError(null)
+    }
+
   }
 
   const changeImportantValue = () => {
@@ -135,7 +137,7 @@ const App = () => {
       </div>
       <div className="w-100 h-100">
         <ul className="text-center pt-5">
-          {showAll ? notes.map(note => <li key={note.id} id={note.id}>{note.content}</li>) : important.map(note => <li key={note.id} className="text-green-500">{note.content}</li>)}
+          {showAll ? notes.map(note => <li className="hover:bg-red-50" key={note.id} id={note.id}>{note.content}</li>) : important.map(note => <li key={note.id} className="text-green-500">{note.content}</li>)}
         </ul>
         <p className=" text-red-700 text-center pt-5">{error}</p>
 
