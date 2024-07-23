@@ -15,6 +15,10 @@ git clone https://github.com/lucasezc/json-server.git
 npm install
 ```
 
+```bash
+npm run server
+```
+
 ### GitHub Page
 
 You can visit the project GitHub Page at: https://lucasezc.github.io/json-server/
