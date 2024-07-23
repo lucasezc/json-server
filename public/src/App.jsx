@@ -44,6 +44,7 @@ const App = () => {
           }
         }
         )
+        
     }
 
     const intervalId = setInterval(() => {
@@ -99,10 +100,11 @@ const App = () => {
     const allImportant = notes.filter(note => note.important); //Metodo de array, solo valores True
     console.log(allImportant);
 
-    setImportant(allImportant);
     console.log(important);
+    setImportant(allImportant)
 
-    if(important.length === 0){
+
+    if(allImportant.length === 0){
       setError("No se encuentran notas importantes");
       setTimeout(() => {
         setError(null);
@@ -114,6 +116,7 @@ const App = () => {
     }
 
   }
+
 
   const changeImportantValue = () => {
     const i = notes.map(e => setNotes(!e.important));
