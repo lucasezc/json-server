@@ -2,11 +2,6 @@
 
 This project demonstrates the usage of `json-server` to create a fake REST API. The database is initialized and started using the command `npm run server`.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [GitHub Page](#githubpage)
 
 ## Installation
 
