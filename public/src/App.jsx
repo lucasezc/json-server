@@ -118,9 +118,9 @@ const App = () => {
   }
 
 
-  const changeImportantValue = () => {
-    const i = notes.map(e => setNotes(!e.important));
-    console.log(notes)
+  const changeImportantValue = (event) => {
+    const clickedValue = event.target.value;
+    console.log(clickedValue)
   }
 
   return (
@@ -140,13 +140,10 @@ const App = () => {
       </div>
       <div className="w-100 h-100">
         <ul className="text-center pt-5">
-          {showAll ? notes.map(note => <li className="hover:bg-red-50" key={note.id} id={note.id}>{note.content}</li>) : important.map(note => <li key={note.id} className="text-green-500">{note.content}</li>)}
+          {showAll ? notes.map(note => <li className="hover:bg-red-50" onClick={() => changeImportantValue()} key={note.id} id={note.id}>{note.content}</li>) : important.map(note => <li key={note.id} className="text-green-500">{note.content}</li>)}
         </ul>
         <p className=" text-red-700 text-center pt-5">{error}</p>
-
-
       </div>
-      <button onClick={changeImportantValue}>test</button>
     </>
   )
 };
