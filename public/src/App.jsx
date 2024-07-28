@@ -119,8 +119,7 @@ const App = () => {
 
 
   const changeImportantValue = (event) => {
-    const clickedValue = event.target.value;
-    console.log(clickedValue)
+    console.log(notes);
   }
 
   return (
