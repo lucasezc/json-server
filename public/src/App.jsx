@@ -9,7 +9,7 @@ const App = () => {
   const [showAll, setShowAll] = useState(true);
   const [error, setError] = useState("");
   const [important, setImportant] = useState([]);
-  
+ 
   console.log(showAll);
   console.log(notes);
   console.log(important);
@@ -119,14 +119,14 @@ const App = () => {
 
 
   const changeImportantValue = (event) => {
-    console.log(notes);
+    
   }
 
   return (
     <>
       <div className="flex flex-col w-100 h-100 m-auto bg-red-500">
         <form onSubmit={addNote} maxLength={60} className="inline-flex items-center justify-center">
-          <input type="text" value={newNote} onChange={handleEventValue} maxLength={60} className="border w-60 h-10  rounded" />
+          <input type="text" value={newNote} onChange={handleEventValue}  maxLength={60} className="border w-60 h-10  rounded" />
           <input type="submit" value="SEND" className="cursor-pointer m-2 p-2 rounded bg-sky-400 text-white" />
           <input type="button" onClick={clearNotes} value={"CLEAR"} title="Esto borra las notas almacenadas del servidor" className="cursor-pointer p-2 rounded bg-sky-400 text-white" />
         </form>
@@ -139,7 +139,7 @@ const App = () => {
       </div>
       <div className="w-100 h-100">
         <ul className="text-center pt-5">
-          {showAll ? notes.map(note => <li className="hover:bg-red-50" onClick={() => changeImportantValue()} key={note.id} id={note.id}>{note.content}</li>) : important.map(note => <li key={note.id} className="text-green-500">{note.content}</li>)}
+          {showAll ? notes.map(note => <li className="hover:bg-red-50" onClick={changeImportantValue} key={note.id} id={note.id}>{note.content}</li>) : important.map(note => <li key={note.id} className="text-green-500">{note.content}</li>)}
         </ul>
         <p className=" text-red-700 text-center pt-5">{error}</p>
       </div>
