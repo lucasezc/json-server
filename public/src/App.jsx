@@ -53,7 +53,6 @@ const App = () => {
     }, 5000);
 
     fdata();
-    noNotes();
   }, []);
 
   const addNote = (event) => {
